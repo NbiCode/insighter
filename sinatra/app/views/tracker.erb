@@ -50,21 +50,14 @@
 				}
 			}
 		</script>
-<div>
-    </br>
-    <table class="move-left">
-        <tr><td><h2><%= @sources.category %></h2></p></td></tr>
-        <tr><td><%= @sources.cat_value %></td></tr>
-        <tr><td><%= @sources.cat_impact %></p></td></tr>
-        <tr><td><%= @sources.number_impact %></td></tr>
-    </table>
-    <br>
-    <br>
-    <br>
-    <br>
-</div>
-		  
-	  
+    	<% @sources.each do |source| %> 
+    	  <% if source.company_id == 1 %>
+    		<div class="categories">
+    			<a href="/intel"><%= source.category %></a>
+    		</div>
+    	  <% end %>
+    	<% end %>     
+	  <div class="push-down"></div>
 	</body>
 </html>
   

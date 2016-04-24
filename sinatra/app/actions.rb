@@ -148,8 +148,12 @@ end
 
 get '/tracker' do
   get_sentences
-  @sources = ExternalSource.find_by(session[:company_id])
+  @sources = ExternalSource.all
   erb :tracker
+end
+
+get '/intel' do
+  erb :intel
 end
 
 get '/machine_ruby' do

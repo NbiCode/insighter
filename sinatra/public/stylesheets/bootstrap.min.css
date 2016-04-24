@@ -8125,7 +8125,7 @@ a {
 */
 /* Dashboard Applications */
 .dashboard {
-  margin-left: 225px;
+  margin-left: 250px;
 }
 
 .probability li {
@@ -8313,7 +8313,7 @@ label {
 }
 
 .machine-container h1 {
-  margin-left:  225px;
+  margin-left:  250px;
   margin-bottom:  30px;
 }
 
@@ -8335,6 +8335,22 @@ label {
 #heading-tracker {
   margin-left: 250px;
   margin-bottom: 25px;
+}
+
+.categories {
+  display: inline-block;
+  margin-left: 250px;
+  margin-right: 200px;
+  width: 130px;
+}
+
+.push-down {
+  height:  280px;
+}
+
+/* Intel applications */
+.intel-table {
+  margin-left: 250px;
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
