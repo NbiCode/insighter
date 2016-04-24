@@ -132,6 +132,8 @@ end
 
 post '/prob' do
   @result = calc_prob(params[:coffee],params[:size],params[:time])
+  @increase = (@result['Increase Revenue']).round(2) * 100
+  @decrease = (@result['Decrease Revenue']).round(2) * 100
   erb :'/prob'
 end
 
@@ -146,7 +148,12 @@ end
 
 get '/tracker' do
   get_sentences
+  @sources = ExternalSource.find_by(session[:company_id])
   erb :tracker
+end
+
+get '/machine_ruby' do
+  erb :'/machine_ruby'
 end
 
 get '/logout' do

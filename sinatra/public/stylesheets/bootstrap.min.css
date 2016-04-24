@@ -7986,7 +7986,7 @@ button.close {
 #banner-images img {
     width: 1150px;
     height: 400px;
-    margin-left: 225px;
+    margin-left: 250px;
     margin-top: -35px;
     border-radius: 1px;
 }
@@ -8068,7 +8068,7 @@ button.close {
 }
 
 .container-content h1, p {
-    margin-left: 225px;
+    margin-left: 250px;
     font-family: Catamaran;
 }
 
@@ -8107,14 +8107,14 @@ button.close {
 /* DAVES CSS FOR WEBSCRAPE */
 #quotes {
   margin-top: -50px;
- /* margin:0;
+  margin:0;
   padding:100px;
   font-size:20px;
-  position:relative;*/
+  position:relative;
 }
-.textItem {/*
+.textItem {
   position:absolute;
-  display:none;*/
+  display:none;
   font-size: 0.8em;
 }
 /*
@@ -8255,7 +8255,7 @@ label {
 
 /*  PROB Applications */
 .prob-container {
-    height: 675px;
+    height: 400px;
   	margin-top: 25px;
   	margin-left: 425px;
   	border: 1px solid #FFFFFF;
@@ -8264,10 +8264,47 @@ label {
 .prob-container .btn {
   border: 1px solid #8B0000;
   margin-left:  300px;
+  margin-bottom: 50px;
 }
 
 .result {
-  margin-top: 150px;
+  height: 135px;
+  width: 135px;
+  text-align: center;
+  padding-top:  50px;
+  border-radius: 50%;
+}
+
+.result-container {
+  margin-top: 50px;
+}
+
+#increase {
+  border: 3px solid green;
+  float: left;
+  margin-left:  125px;
+}
+
+#decrease {
+  border:  3px solid red;
+  float: right;
+  margin-right:  650px;
+}
+
+.effect {
+  display: inline;
+}
+
+#left-effect {
+  margin-left: 585px;
+}
+
+#right-effect {
+  margin-left: 240px;
+}
+
+.make-space {
+  height: 255px;
 }
 
 /*  Machine applications */
@@ -8288,6 +8325,16 @@ label {
 .id3 th, td {
   padding:  15px;
   border-bottom: 1px solid #ddd;
+}
+
+/* Tracker applications */
+.move-left {
+  margin-left: 250px;
+}
+
+#heading-tracker {
+  margin-left: 250px;
+  margin-bottom: 25px;
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */

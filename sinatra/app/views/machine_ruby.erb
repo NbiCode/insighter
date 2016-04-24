@@ -25,49 +25,35 @@
 
 	<body>
 	  <div class="machine-container">
-		<h1>Marketing Campaign</h1>
-		<p>Understand the revenue patterns based on a marketing campaign you're 
-		   considering to implement.
+		<h1>RUBY OUTPUT: Understanding Revenue Pattern</h1>
+		<p>Ruby processes the data and generates the content seen below.
 		</p>
 	
   		<table class="id3" align="center" width="35%">
   			<tr>
-    			<th>Discount Level</th>
-    			<th>Product Mix</th> 
-    			<th>Revenue Impact</th>
+    			<th>Ruby Output</th>
   			</tr>
   			<tr>
-    			<td>Up to 30%</td>
-    			<td>All products</td> 
-    			<td>Postive</td>
+    			<td>if Discount=='<30' then Revenue_Goes='UP'</td>
   			</tr>
   			<tr>
-    			<td>30 to 50%</td>
-    			<td>All products</td> 
-    			<td>Postive</td>
+    			<td>elsif Discount=='[30-50]' and Coffee=='CAPPUCCINO' then Revenue_Goes='UP'</td>
   			</tr>
   			<tr>
-    			<td>30 to 50%</td>
-    			<td>Americano</td> 
-    			<td>Postive</td>
+    			<td>elsif Discount=='[30-50]' and Coffee=='AMERICANO' then Revenue_Goes='UP'</td>
   			</tr>
   			<tr>
-    			<td>50% to 80%</td>
-    			<td>Cappuccino</td> 
-    			<td>Negative</td>
+    			<td>elsif Discount=='[50-80]' then Revenue_Goes='DOWN'</td>
   			</tr>
   			<tr>
-    			<td>More than 80%</td>
-    			<td>All products</td> 
-    			<td>Negative</td>
+    			<td>elsif Discount=='[50-80]' then Revenue_Goes='DOWN'</td>
   			</tr>
   			<tr>
-    			<td></td>
-    			<td><a href='machine_ruby'><small>Ruby Output</small></a></td> 
-    			<td></td>
+    			<td>else raise 'There was not enough information during training to do
+    			     a proper induction for this data element.</td>
   			</tr>
 		</table>
 	  </div>
-	  
+
 	</body>
 </html>

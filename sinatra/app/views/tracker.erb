@@ -6,16 +6,11 @@
 
 
 
-<h1>dashboard</h1>
-
-<strong>User Name:</strong><%= session[:username] %>
-<strong>User Password:</strong><%= session[:password] %>
-<%= session[:email] %>
-
+<h1 id="heading-tracker">TRACKER</h1>
 
 <div class="probability">
-  <p><a href="/dashboard/prob">Probability Check</a></p>
-  <p><a href="/dashboard/machine">Understanding Revenue Patterns</a></p>
+  <p><a href="/prob">Probability Check</a></p>
+  <p><a href="/machine">Understanding Revenue Patterns</a></p>
 </div>
 
 <div id="quotes">
@@ -23,7 +18,7 @@
 
   <div class="textItem"><%= @sentences[55] %></div>
 
-  <div class="textItem"><%= @sentences[75] %></div>
+  <div class="textItem"><%= @sentences[60] %></div>
 </div
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
@@ -37,7 +32,7 @@
 				if($('.textItem').length > 1)
 				{
 					$('.textItem:first').addClass('current').fadeIn(1000);
-					setInterval('textRotate()', 3000);
+					setInterval('textRotate()', 6000);
 				}
 			}
 			function textRotate()
@@ -55,6 +50,21 @@
 				}
 			}
 		</script>
+<div>
+    </br>
+    <table class="move-left">
+        <tr><td><h2><%= @sources.category %></h2></p></td></tr>
+        <tr><td><%= @sources.cat_value %></td></tr>
+        <tr><td><%= @sources.cat_impact %></p></td></tr>
+        <tr><td><%= @sources.number_impact %></td></tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+		  
+	  
 	</body>
 </html>
   
